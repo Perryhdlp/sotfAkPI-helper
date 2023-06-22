@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sea of Thieves API Helper</title>
+  <style>
+    body {
+      min-width: 30rem;
+    }
+    .container {
+      margin-bottom: 10px;
+    }
+    #cookieValue {
+      width: 90%;
+      height: 100px;
+      resize: vertical;
+      font-family: monospace;
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .copyBtn {
+      display: none;
+    }
+    .navigateBtn {
+      display: none;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sea of Thieves API Helper</h1>
+  <div class="container">
+    <p>
+        This extension helps retrieve the 'rat' cookie from the Sea of Thieves website. <br/>
+        This cookie is required to use the Sea of Thieves fAkePI. <br/>
+        Developed by Perryhdlp, <a href="github.com/perryhdlp">GitHub</a><br/>
+    </p>
+    
+        <ol>
+            <li>
+                Navigate to <a href="https://www.seaofthieves.com/">Sea of Thieves</a> and log in
+            </li>
+            <li>
+                Click the "Retrieve Cookie" button to get the cookie value
+            </li>
+            <li>
+                Use the "Copy to Clipboard" button to copy the value 
+            </li>
+            <li>
+                Navigate to <a href="https://sotfAkPI.vercel.app/">sotfAkPI</a> and paste the cookie value into the "Cookie" field
+            </li>
+        </ol>
+    
+        
+    <button id="retrieveCookieBtn">Retrieve Cookie</button>
+    <button id="navigateBtn" class="navigateBtn">Go To sotfAkPI</button>
+  </div>
+  <div class="container">
+    <h2>Cookie Value:</h2>
+    <textarea id="cookieValue" rows="5" readonly></textarea>
+    <button id="copyBtn" class="copyBtn">Copy to Clipboard</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

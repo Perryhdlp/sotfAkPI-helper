@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Sea of Thieves API Helper",
+    "description": "This extension will get the cookie called 'rat' from the Sea of Thieves website so it can be used with the sotfAkPI to get your stats. This cookie is called a JWT token and is encrypted with an unknown SHA256 algorithm so it can't be decrypted. This extension will retrieve the cookie and send it to the sotfAkPI to be used for getting your stats.",
+    "version": "1.0",
+    "permissions": ["cookies"],
+    "host_permissions": [
+        "https://www.seaofthieves.com/*"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    }
+  }
+  
