@@ -15,6 +15,10 @@ The Sea of Thieves API Helper is a Chrome extension designed to assist in retrie
 
 The Sea of Thieves API Helper extension was developed by [Perryhdlp](https://github.com/perryhdlp), a passionate developer with an interest in gaming and API integration. Feel free to check out my GitHub profile for more projects and contributions.
 
+## Security and Data Privacy
+
+The 'rat' cookie retrieved by the Sea of Thieves API Helper extension is an encoded HS256 JWT token. It is encrypted with a decryption key known only to Rare/Microsoft. The extension does not store or transmit any user data. Your personal information and gameplay statistics remain secure and are not accessed or stored by the extension or the developer.
+
 ## Installation
 
 1. Clone or download the repository to your local machine.
